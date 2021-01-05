@@ -45,14 +45,14 @@ Body Section
 			<ul class="nav nav-list promowrapper">
 				<li>
 					<div class="thumbnail">
-						<a class="zoomTool " href="<c:url value="/product-details/28"/>"
+						<a class="zoomTool " href="<c:url value="/product-details/19"/>"
 							title="add to cart"><span class="icon-search"></span> QUICK
 							VIEW</a> <img
 							src="<c:url value="/assets/user/img/sungbantiaas50.jpg"/>"
 							alt="bootstrap ecommerce templates">
 						<div class="caption">
 							<h4>
-								<a class="btn btn-primary" href="<c:url value="/AddCart/28"/>">BUY</a> <span
+								<a class="btn btn-primary" href="<c:url value="/AddCart/19"/>">BUY</a> <span
 									class="pull-right">£3.000</span>
 							</h4>
 						</div>
@@ -77,14 +77,14 @@ Body Section
 				<li style="border: 0">&nbsp;</li>
 				<li>
 					<div class="thumbnail">
-						<a class="zoomTool" href="<c:url value="/product-details/8"/>"
+						<a class="zoomTool" href="<c:url value="/product-details/1"/>"
 							title="add to cart"><span class="icon-search"></span> QUICK
 							VIEW</a> <img
 							src="<c:url value="/assets/user/img/1911.jpg"/>"
 							alt="bootstrap template">
 						<div class="caption">
 							<h4>
-								<a class="btn btn-primary" href="<c:url value="/AddCart/8"/>">BUY</a> <span
+								<a class="btn btn-primary" href="<c:url value="/AddCart/1"/>">BUY</a> <span
 									class="pull-right">$2.000</span>
 							</h4>
 						</div>
@@ -167,7 +167,7 @@ New Products
 	-->
 			<div class="well well-small">
 				<h3>
-					<a class="btn btn-mini pull-right" href="products.html"
+					<a class="btn btn-mini pull-right" href="#"
 						title="View more">VIew More<span class="icon-plus"></span></a>
 					Featured Products
 				</h3>
@@ -185,7 +185,7 @@ New Products
 								<div class="caption">
 									<h5>${item.name}</h5>
 									<h4>
-										<a class="defaultBtn" href="product_details.html"
+										<a class="defaultBtn" href="#"
 											title="Click to view"><span class="icon-zoom-in"></span></a>
 										<a class="btn btn-primary" href="<c:url value="/AddCart/${item.id }"/>" title="add to cart"><span
 											class="icon-plus"></span></a> <span class="pull-right">£${item.price }</span>

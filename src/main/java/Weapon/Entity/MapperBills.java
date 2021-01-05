@@ -16,6 +16,7 @@ import org.springframework.jdbc.core.RowMapper;
 			bills.setTotal(rs.getDouble("total"));
 			bills.setQuanty(rs.getInt("quanty"));
 			bills.setNote(rs.getString("note"));
+			bills.setDate(rs.getDate("date"));
 			return bills;
 		} 
 

@@ -1,5 +1,6 @@
 package Weapon.Dao;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -13,14 +14,15 @@ import Weapon.Entity.MapperBillsDetail;
 public class BillsDao extends BaseDao {
 	public int AddBills(Bills bill) {
 		StringBuffer sql = new StringBuffer();
-		sql.append("insert into bills (  `user`,`phone`,`displayname`,`address`,`total`,`quanty`,`note`  ) values ( ");
+		sql.append("insert into bills (  `user`,`phone`,`displayname`,`address`,`total`,`quanty`,`note`,`date`  ) values ( ");
 		sql.append("    '" + bill.getUser() + "', ");
 		sql.append("    '" + bill.getPhone() + "', ");
 		sql.append("    '" + bill.getDisplayname() + "', ");
 		sql.append("    '" + bill.getAddress() + "', ");
 		sql.append("    '" + bill.getTotal() + "', ");
 		sql.append("    '" + bill.getQuanty() + "', ");
-		sql.append("    '" + bill.getNote() + "' ");
+		sql.append("    '" + bill.getNote() + "', ");
+		sql.append("    '" + LocalDate.now() + "' ");
 		sql.append("); ");
 
 		int insert = _jdbcTemplate.update(sql.toString());

@@ -1,5 +1,7 @@
 package Weapon.Entity;
 
+import java.sql.Date;
+
 public class Bills {
 private long id;
 private String user;
@@ -9,11 +11,18 @@ private String address;
 private double total;
 private int quanty;
 private String note;
+private Date date;
 public Bills() {
 	super();
 }
 public long getId() {
 	return id;
+}
+public Date getDate() {
+	return date;
+}
+public void setDate(Date date) {
+	this.date = date;
 }
 public void setId(long id) {
 	this.id = id;
